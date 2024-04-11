@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.input-rang{
+    width: 100px;
+    background-color: red;
+    height: 10px;
+}
