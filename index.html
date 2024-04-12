@@ -11,9 +11,60 @@
 </head>
 
 <body>
-<span class="input-rang">,</span>
-<span class="input-rang">,</span>
-<div> </div>
+
+<div class="container">
+    <div class="card-body shadow-lg">
+        <div class="custom-range">
+            <progress class="slider"></progress>
+            <div class="thumb" id="thumb"></div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .card-body{
+        padding: 40px;
+    }
+    .custom-range{
+        background: #eee;
+        border-radius: 4px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .slider{
+        min-width: 100px;
+        width: 400px;
+        height: 10px;
+        background: green;
+        display: inline-block;
+    }
+    .thumb{
+        width: 20px;
+        aspect-ratio: 1/1;
+        background-color: #067578;
+        display: inline-block;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        -webkit-user-drag: initial;
+    }
+    .thumb:hover{
+        cursor: pointer;
+    }
+
+</style>
+
 <script src="script.js"></script>
 </body>
 
