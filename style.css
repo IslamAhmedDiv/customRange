@@ -1,9 +1,41 @@
 body{
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-.input-rang{
-    width: 100px;
-    background-color: red;
-    height: 10px;
+.card-body{
+    padding: 40px;
+}
+.custom-range{
+    background: #4b4b4b;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.slider{
+    min-width: 100px;
+    width: 400px;
+    height: 12px;
+    background: #e5ebff;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.31);
+}
+.thumb{
+    width: 20px;
+    aspect-ratio: 1/1;
+    background-color: darkgreen;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    cursor: grab;
+    -webkit-user-drag: initial;
+    z-index: 2;
 }
