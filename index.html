@@ -15,7 +15,7 @@
 <div class="container">
     <div class="card-body shadow-lg">
         <div class="custom-range">
-            <progress class="slider"></progress>
+            <progress data-min="0" data-max="10" data-value="" class="slider" id="slider"></progress>
             <div class="thumb" id="thumb"></div>
         </div>
     </div>
@@ -56,12 +56,13 @@
         top: 50%;
         left: 0;
         transform: translate(-50%, -50%);
-        cursor: pointer;
+        cursor: move;
         -webkit-user-drag: initial;
+        z-index: 2;
     }
-    .thumb:hover{
-        cursor: pointer;
-    }
+    /*.thumb:hover{*/
+    /*    cursor: pointer;*/
+    /*}*/
 
 
 </style>
